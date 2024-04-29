@@ -13,10 +13,11 @@ class CreateMessageView(web.View):
             created=datetime.now()
         )
         return web.json_response(
-            {
+            data={"message": {
                 'id': message.id,
                 'text': message.text,
                 'created': str(message.created)
+                }
             }
         )
 
