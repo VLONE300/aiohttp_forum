@@ -1,0 +1,6 @@
+common:
+  port:
+  host:
+postgres:
+  database_url: postgres://vlone:pass@localhost/aiohttp_forum
+  require_ssl: false
